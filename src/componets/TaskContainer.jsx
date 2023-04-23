@@ -4,15 +4,15 @@ import { TodoList } from "./TodoList"
 import { TodoItem } from "./TodoItem"
 
 function TaskContainer() {
-
+ 
     const todos = [
         {text: 'Cortar cebolla', completed: false},
         {text: 'Cortar cebolla 2', completed: false},
         {text: 'Cortar cebolla 3', completed: false},
       ]
 
-    return (
-        <div className='taskContainer'>
+    return ( 
+        <section className='taskContainer'>
         <TodoCounter />
         <TodoSearch />
         <TodoList>
@@ -22,7 +22,7 @@ function TaskContainer() {
             ))
           }
         </TodoList>
-      </div>  
+      </section>  
     )
 }
 

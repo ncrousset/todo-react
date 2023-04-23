@@ -1,5 +1,7 @@
 export function TodoSearch() {
     return (
-        <input type="text" />
+        <div className="todoSearch"> 
+            <input type="text" placeholder="Search..." />
+        </div>
     )
 }

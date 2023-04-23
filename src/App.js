@@ -7,15 +7,14 @@ import CreateTask from './componets/CreateTask';
 
 function App() {
   return (
-    <div className='container'>
+    <>
 
       <CreateTask />
-
       <TaskContainer />
 
       
       {/* <CreateTodoButton /> */}
-    </div>
+    </>
   );
 }
 

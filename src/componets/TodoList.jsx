@@ -1,6 +1,6 @@
 export function TodoList(props) {
     return(
-        <ul>
+        <ul className="taskList">
             {props.children}
         </ul>
     )

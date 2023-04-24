@@ -1,8 +1,9 @@
-export function TodoCounter() {
+export function TodoCounter({total, completed}) {
+
     return (
         <div className="todoCounter">
             <h2>Your tasks</h2>
-            <p>Has completado 2 de 3 TODOs</p>
+            <p>Has completado {completed} de {total} TODOs</p>
         </div>        
     )
 }

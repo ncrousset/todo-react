@@ -1,11 +1,22 @@
 export function TodoItem(props) {
+
+    const handleClickDelete = () => {
+
+    }
+
     return (
-        <li>
+        <li className=
+        {` ${props.completed && 'task-completed'}`}>
             <span>
-                <input type="checkbox" ></input>
+                <input 
+                    type="checkbox"  
+                    checked={props.completed} 
+                    disabled={props.completed} 
+                    onChange={props.onComplete}
+                    ></input>
             </span>
             <p>{props.text}</p>
-            <span>X</span>
+            <span onClick={props.onDelete}>X</span>
         </li>
     )
 }

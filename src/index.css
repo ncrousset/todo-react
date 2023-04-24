@@ -16,6 +16,7 @@ body {
   height: 100%;
   width: 100%;
   /* overflow: hidden */
+  font-family: roboto, 'Times New Roman', Times, serif;
   background-image: linear-gradient(to bottom, #23C8B2, #fff);
 }
 
@@ -133,4 +134,9 @@ body div {
 .taskList p {
   width: 85%;
 }
+
+.task-completed {
+  text-decoration: line-through;
+}
+
 

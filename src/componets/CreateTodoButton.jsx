@@ -1,10 +1,9 @@
-export function CreateTodoButton() {
+export function CreateTodoButton () {
+  const handleClickButton = () => {
 
-    const handleClickButton = () => {
+  }
 
-    }
-    
-    return (
+  return (
         <button onClick={handleClickButton}>Create task</button>
-    )
+  )
 }

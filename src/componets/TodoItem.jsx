@@ -1,7 +1,7 @@
 export function TodoItem (props) {
-  const handleClickDelete = () => {
+//   const handleClickDelete = () => {
 
-  }
+  //   }
 
   return (
         <li className=

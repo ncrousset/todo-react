@@ -175,4 +175,7 @@ body div {
   margin-bottom: 0;
 }
 
+button {
+  cursor: pointer;
+}
 

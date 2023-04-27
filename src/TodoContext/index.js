@@ -39,6 +39,13 @@ function TodoProvider (props) {
     saveItem(newTodo)
   }
 
+  const addTodo = (text) => {
+    const newTack = [{ text, completed: false }]
+    const newTodo = [...todos, ...newTack]
+
+    saveItem(newTodo)
+  }
+
   return (
         <TodoContext.Provider value={{
           error,
@@ -49,9 +56,11 @@ function TodoProvider (props) {
           setValueSearch,
           searchedTodos,
           completeTodo,
+          addTodo,
           deleteTodo,
           openModal,
           setOpenModal
+
         }}>
             {props.children}
         </TodoContext.Provider>

@@ -5,7 +5,6 @@ import TodoSearch from './TodoSearch'
 import { TodoList } from './TodoList'
 import { TodoItem } from './TodoItem'
 import { Modal } from './Modal'
-import CreateTask from './CreateTask'
 
 function TaskContainer () {
   const {

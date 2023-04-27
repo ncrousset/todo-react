@@ -4,6 +4,8 @@ import { TodoCounter } from './TodoCounter'
 import TodoSearch from './TodoSearch'
 import { TodoList } from './TodoList'
 import { TodoItem } from './TodoItem'
+import { Modal } from './Modal'
+import CreateTask from './CreateTask'
 
 function TaskContainer () {
   const {
@@ -11,7 +13,8 @@ function TaskContainer () {
     loading,
     searchedTodos,
     completeTodo,
-    deleteTodo
+    deleteTodo,
+    openModal
   } = useContext(TodoContext)
 
   return (
@@ -34,6 +37,10 @@ function TaskContainer () {
               />
             ))}
       </TodoList>
+
+      { !!openModal &&
+        <Modal ></Modal>
+      }
 
     </section>
   )

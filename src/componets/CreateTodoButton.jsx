@@ -1,9 +1,21 @@
+import { useContext } from 'react'
+import { TodoContext } from '../TodoContext'
+
 export function CreateTodoButton () {
+  const { setOpenModal } = useContext(TodoContext)
+
   const handleClickButton = () => {
 
   }
 
-  return (
-        <button onClick={handleClickButton}>Create task</button>
+  const handleClickModal = () => {
+    setOpenModal(true)
+  }
+
+  return (<>
+    <button onClick={handleClickButton}>Create task</button>
+    <button onClick={handleClickModal}>Test modal</button>
+  </>
+
   )
 }

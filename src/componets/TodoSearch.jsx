@@ -1,7 +1,8 @@
-// import { useState } from 'react'
+import { useContext } from 'react'
+import { TodoContext } from '../TodoContext'
 
-export function TodoSearch ({ searchValue, setValueSearch }) {
-  // const [searchValue, setSearch] = useState('')
+function TodoSearch () {
+  const { setValueSearch, searchValue } = useContext(TodoContext)
 
   const onSearchValueChange = (event) => {
     setValueSearch(event.target.value)
@@ -19,3 +20,5 @@ export function TodoSearch ({ searchValue, setValueSearch }) {
         </div>
   )
 }
+
+export default TodoSearch
